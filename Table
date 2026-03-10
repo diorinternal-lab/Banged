@@ -20,8 +20,6 @@ getgenv().vicious = {
 
         ['FOV'] = {
             ['Enabled'] = true,
-            ['Show FOV'] = true,
-            ['Type'] = 'Box',
             ['Size'] = {
                 ['X'] = 4,
                 ['Y'] = 4,
