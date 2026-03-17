@@ -76,7 +76,6 @@ getgenv().vicious = {
 			'[Double-Barrel SG]',
 			'[Revolver]',
 			'[TacticalShotgun]',
-            '[Silencer]'
 		},
 
         ['FOV'] = {
@@ -114,13 +113,9 @@ getgenv().vicious = {
             ['Target Part'] = 'Head',
         },
 
-        ['Rapid Fire'] = {
-            ['Enabled'] = false,
-            ['Mode'] = 'DasHood',
-        },
-
         ['Delay'] = {
             ['Enabled'] = false,
+			['Mode'] = 'DasHood'
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 100,
                 ['[Revolver]'] = 100,
@@ -171,18 +166,6 @@ getgenv().vicious = {
         },
     },
 
-    ['Movement Modification'] = {
-        ['Enabled'] = false,
-        ['Keybind'] = 'T',
-        ['Multiplier'] = 35,
-
-        ['Conditions'] = {
-            ['[Normal]'] = '50',
-            ['[Reloading]'] = '50',
-            ['[Low-Health]'] = '50',
-        },
-    },
-
     ['World Modifications'] = {
         ['Color Settings'] = {
             ['Enabled'] = false,
@@ -192,6 +175,18 @@ getgenv().vicious = {
     },
 
     ['Character Modifications'] = {
+        ['Movement Modification'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = 'T',
+            ['Multiplier'] = 35,
+
+            ['Conditions'] = {
+                ['[Normal]'] = '50',
+                ['[Reloading]'] = '50',
+                ['[Low-Health]'] = '50',
+            },
+        },
+        
         ['No Jump Cooldown'] = {
             ['Enabled'] = false,
         },
