@@ -172,8 +172,6 @@ getgenv().banged = {
             [2] = '[Knife]',
             [3] = '[TacticalShotgun]',
             [4] = '[Double-Barrel SG]',
-            [5] = '[SMG]',
-            [6] = '[MP5]',
         },
     },
 
