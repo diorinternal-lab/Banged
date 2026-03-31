@@ -1,3 +1,4 @@
+-- @56936 for the cheat
 getgenv().banged = {
     ['Global'] = {
         ['Enabled'] = false,
