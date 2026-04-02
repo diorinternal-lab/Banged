@@ -2,22 +2,13 @@
 getgenv().banged = {
     ['Global'] = {
         ['Enabled'] = false,
-        ['Check'] = {
-            ['Checks'] = {
-                ['Knocked'] = false,
-                ['Self-Knocked'] = false,
-                ['Visible'] = false,
-                ['ForceField'] = false,
-                ['Crew'] = false,
-                ['Anti Trip'] = false,
-            },
-        },
         ['Keybind'] = 'C',
     },
 
     ['Silent Aimbot'] = {
         ['Enabled'] = false,
-        ['HitParts'] = 'Closest Point',
+        ['Hitparts'] = 'Closest Point',
+        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
 
         ['FOV'] = {
             ['Enabled'] = false,
@@ -36,13 +27,14 @@ getgenv().banged = {
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
-            ['Z'] = 0, 
+            ['Z'] = 0,
         },
     },
 
     ['Camera Aimbot'] = {
         ['Enabled'] = false,
-        ['HitParts'] = 'Closest Part',
+        ['Hitparts'] = 'Closest Part', -- points aren't valid for camera aimbot
+        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
         ['Smoothing'] = 0.523,
         ['Type'] = 'Linear',
         ['Mode'] = 'In',
@@ -71,6 +63,7 @@ getgenv().banged = {
 
     ['Trigger Bot'] = {
         ['Enabled'] = false,
+        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
         ['Delay Interval'] = 0.005,
 
         ['Weapons'] = {
@@ -109,16 +102,18 @@ getgenv().banged = {
             },
         },
 
-        ['Bullet TP'] = {
+        ['Bullet TP'] = { -- Working
             ['Enabled'] = false,
             ['Range'] = 'Infinite',
             ['Keybind'] = 'E',
             ['Target Part'] = 'Head',
+            ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
         },
 
         ['Force Hit'] = {
             ['Enabled'] = false,
             ['Hit Part'] = 'Head',
+            ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
             ['Keybind'] = 'T',
         },
 
@@ -131,7 +126,7 @@ getgenv().banged = {
             },
         },
 
-        ['Delay'] = {
+        ['Delay'] = { -- Working
             ['Enabled'] = true,
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 80,
@@ -154,13 +149,13 @@ getgenv().banged = {
             ['Length'] = '1',
         },
 
-        ['Skin Changer'] = {
-            ['Enabled'] = true,
+        ['Skin Changer'] = { -- Working
+            ['Enabled'] = false,
             ['Weapons'] = {
-                ['[Revolver]'] = 'Golden Age',
-                ['[Double-Barrel SG]'] = 'Galaxy',
-                ['[TacticalShotgun]'] = 'Shadow',
-                ['[Knife]'] = 'GPO-Knife',
+                ['[Revolver]'] = '',
+                ['[Double-Barrel SG]'] = '',
+                ['[TacticalShotgun]'] = '',
+                ['[Knife]'] = '',
             },
         },
     },
@@ -176,10 +171,10 @@ getgenv().banged = {
         },
     },
 
-    ['ESP'] = {
-        ['Enabled'] = false,
+    ['ESP'] = { -- Working
+        ['Enabled'] = true,
         ['Keybind'] = 'G',
-        ['Mode'] = 'Both',
+        ['Mode'] = 'Both', -- shows the radar if set to BOTH.
         ['Team Check'] = false,
         ['Locked Indicator'] = true,
         ['Name'] = true,
@@ -193,16 +188,17 @@ getgenv().banged = {
             },
         },
     },
-
-    ['World Modifications'] = {
+ 
+    ['World Modifications'] = { -- Working
         ['Color Settings'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Type'] = 'Normal',
+            ['Intensity'] = 6,
             ['Color'] = Color3.fromRGB(255, 255, 255),
         },
     },
 
-    ['Character Modifications'] = {
+    ['Character Modifications'] = { -- Working
         ['Movement Modification'] = {
             ['Enabled'] = true,
             ['Keybind'] = 'T',
