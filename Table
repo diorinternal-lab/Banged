@@ -1,21 +1,20 @@
--- @56936 for the cheat
-getgenv().banged = {
+shared.Amiri = {
     ['Global'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Keybind'] = 'C',
     },
 
     ['Silent Aimbot'] = {
-        ['Enabled'] = false,
-        ['Hitparts'] = 'Closest Point',
+        ['Enabled'] = true,
+        ['Hitparts'] = 'Closest Part',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
 
         ['FOV'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 4,
-                ['Y'] = 4,
-                ['Z'] = 4,  
+                ['X'] = 12,
+                ['Y'] = 12,
+                ['Z'] = 12,
             },
         },
 
@@ -32,10 +31,10 @@ getgenv().banged = {
     },
 
     ['Camera Aimbot'] = {
-        ['Enabled'] = false,
-        ['Hitparts'] = 'Closest Part', -- points aren't valid for camera aimbot
+        ['Enabled'] = true,
+        ['Hitparts'] = 'UpperTorso',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Smoothing'] = 0.523,
+        ['Smoothing'] = 0.0523,
         ['Type'] = 'Linear',
         ['Mode'] = 'In',
 
@@ -46,25 +45,25 @@ getgenv().banged = {
         },
 
         ['Camera Modes'] = {
-            ['First Person'] = false,
+            ['First Person'] = true,
             ['Third Person'] = false,
-            ['Shift-Locked'] = false,
+            ['Shift-Locked'] = true,
         },
 
         ['FOV'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 100,
-                ['Y'] = 100,
-                ['Z'] = 100,
+                ['X'] = 110,
+                ['Y'] = 110,
+                ['Z'] = 110,
             },
         },
     },
 
     ['Trigger Bot'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Delay Interval'] = 0.005,
+        ['Delay Interval'] = 0.05,
 
         ['Weapons'] = {
             '[Double-Barrel SG]',
@@ -73,11 +72,11 @@ getgenv().banged = {
         },
 
         ['FOV'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 4.5,
-                ['Y'] = 3.7,
-                ['Z'] = 3.7,
+                ['X'] = 6.5,
+                ['Y'] = 6.7,
+                ['Z'] = 6.7,
             },
         },
 
@@ -102,7 +101,13 @@ getgenv().banged = {
             },
         },
 
-        ['Bullet TP'] = { -- Working
+        ['Range Modification'] = {
+            ['Enabled'] = true,
+            ['Value'] = 10000,    
+            ['Bypasspos'] = 10,
+        },
+
+        ['Bullet TP'] = {
             ['Enabled'] = false,
             ['Range'] = 'Infinite',
             ['Keybind'] = 'E',
@@ -126,11 +131,11 @@ getgenv().banged = {
             },
         },
 
-        ['Delay'] = { -- Working
-            ['Enabled'] = true,
+        ['Delay'] = {
+            ['Enabled'] = false,
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 80,
-                ['[Revolver]'] = 30,
+                ['[Revolver]'] = 100,
                 ['[TacticalShotgun]'] = 100,
                 ['[SMG]'] = 10,
                 ['[P90]'] = 9,
@@ -149,7 +154,7 @@ getgenv().banged = {
             ['Length'] = '1',
         },
 
-        ['Skin Changer'] = { -- Working
+        ['Skin Changer'] = {
             ['Enabled'] = false,
             ['Weapons'] = {
                 ['[Revolver]'] = '',
@@ -171,10 +176,10 @@ getgenv().banged = {
         },
     },
 
-    ['ESP'] = { -- Working
+    ['ESP'] = {
         ['Enabled'] = true,
         ['Keybind'] = 'G',
-        ['Mode'] = 'Both', -- shows the radar if set to BOTH.
+        ['Mode'] = 'Both',
         ['Team Check'] = false,
         ['Locked Indicator'] = true,
         ['Name'] = true,
@@ -189,20 +194,20 @@ getgenv().banged = {
         },
     },
  
-    ['World Modifications'] = { -- Working
+    ['World Modifications'] = {
         ['Color Settings'] = {
             ['Enabled'] = true,
             ['Type'] = 'Normal',
-            ['Intensity'] = 6,
+            ['Intensity'] = 8,
             ['Color'] = Color3.fromRGB(255, 255, 255),
         },
     },
 
-    ['Character Modifications'] = { -- Working
+    ['Character Modifications'] = {
         ['Movement Modification'] = {
             ['Enabled'] = true,
             ['Keybind'] = 'T',
-            ['Multiplier'] = 35,
+            ['Multiplier'] = 32,
 
             ['Conditions'] = {
                 ['[Normal]'] = '22',
