@@ -4,39 +4,12 @@ shared.Amiri = {
         ['Keybind'] = 'C',
     },
 
-    ['Silent Aimbot'] = {
-        ['Enabled'] = true,
-        ['Hitparts'] = 'Closest Part',
-        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-
-        ['FOV'] = {
-            ['Enabled'] = true,
-            ['Size'] = {
-                ['X'] = 12,
-                ['Y'] = 12,
-                ['Z'] = 12,
-            },
-        },
-
-        ['Closest Point'] = {
-            ['Mode'] = 'Advanced',
-            ['Point Scale'] = 0.12,
-        },
-
-        ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0,
-        },
-    },
-
     ['Camera Aimbot'] = {
         ['Enabled'] = true,
         ['Hitparts'] = 'UpperTorso',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
         ['Smoothing'] = 0.0523,
         ['Type'] = 'Linear',
-        ['Mode'] = 'In',
 
         ['Prediction'] = {
             ['X'] = 0,
@@ -53,10 +26,36 @@ shared.Amiri = {
         ['FOV'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 110,
-                ['Y'] = 110,
-                ['Z'] = 110,
+                ['X'] = 10,
+                ['Y'] = 10,
+                ['Z'] = 10,
             },
+        },
+    },
+
+    ['Silent Aimbot'] = {
+        ['Enabled'] = true,
+        ['Hitparts'] = 'Closest Part',
+        ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
+
+        ['FOV'] = {
+            ['Enabled'] = false,
+            ['Size'] = {
+                ['X'] = 12,
+                ['Y'] = 12,
+                ['Z'] = 12,
+            },
+        },
+
+        ['Closest Point'] = {
+            ['Mode'] = 'Advanced',
+            ['Point Scale'] = 0.12,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
         },
     },
 
@@ -91,20 +90,26 @@ shared.Amiri = {
             ['Enabled'] = false,
             
             ['Weapons'] = {
-                ['Mode'] = 'HoodCustoms',
                 ['[Double-Barrel SG]'] = 0,
                 ['[TacticalShotgun]'] = 0,
                 ['[Shotgun]'] = 0,
                 ['[DrumShotgun]'] = 0,
-                ['[SMG]'] = 0,
-                ['[P90]'] = 0,
             },
+        },
+
+        ['Phantom Mag'] = {
+            ['Enabled'] = true,
         },
 
         ['Range Modification'] = {
             ['Enabled'] = true,
-            ['Value'] = 10000,    
+            ['Value'] = 10000,
             ['Bypasspos'] = 10,
+        },
+
+        ['Railgun'] = {
+            ['Enabled'] = true,
+            ['Delay Interval'] = 0.02,
         },
 
         ['Bullet TP'] = {
@@ -148,12 +153,6 @@ shared.Amiri = {
             },
         },
 
-        ['Hitscan'] = {
-            ['Enabled'] = false,
-            ['Width'] = '1',
-            ['Length'] = '1',
-        },
-
         ['Skin Changer'] = {
             ['Enabled'] = false,
             ['Weapons'] = {
@@ -167,7 +166,7 @@ shared.Amiri = {
 
     ['Inventory Sorter'] = {
         ['Enabled'] = false,
-        ['Keybind'] = 'P',
+        ['Keybind'] = 'F2',
         ['Weapons'] = {
             [1] = '[Revolver]',
             [2] = '[Knife]',
@@ -176,30 +175,37 @@ shared.Amiri = {
         },
     },
 
-    ['ESP'] = {
+    ['Purchase'] = {
         ['Enabled'] = true,
-        ['Keybind'] = 'G',
-        ['Mode'] = 'Both',
-        ['Team Check'] = false,
-        ['Locked Indicator'] = true,
-        ['Name'] = true,
-        ['Distance'] = false,
-
-        ['Color Configuration'] = {
-            ['Color'] = Color3.fromRGB(255, 255, 255),
-            ['Target Color'] = {
-                ['Color'] = Color3.fromRGB(255, 0, 0),
-                ['Size'] = 12.8,
-            },
-        },
+        ['RageArmor'] = true,
+        ['Loadout'] = true,
     },
- 
+
+    ['Visuals'] = {
+        ['Enabled'] = true,
+        ['Header'] = '',
+        ['Keybind'] = 'G',
+        ['TeamCheck'] = false,
+        ['LockedIndicator'] = true,
+        ['Distance'] = false,
+        ['Name'] = true,
+        ['Radar'] = true,
+        ['KeybindList'] = true,
+
+        ['Colors'] = {
+            ['Default'] = Color3.fromRGB(255, 255, 255),
+            ['Target'] = Color3.fromRGB(255, 192, 203),
+            ['Header'] = Color3.fromRGB(24, 155, 12),
+            ['KeybindListColor'] = Color3.fromRGB(255, 55, 0),
+        },
+
+        ['Size'] = 12.8,
+    },
+
     ['World Modifications'] = {
         ['Color Settings'] = {
             ['Enabled'] = true,
-            ['Type'] = 'Normal',
-            ['Intensity'] = 8,
-            ['Color'] = Color3.fromRGB(255, 255, 255),
+            ['Intensity'] = 3,
         },
     },
 
@@ -215,7 +221,9 @@ shared.Amiri = {
                 ['[Low-Health]'] = '22',
             },
         },
-        
+    },
+
+    ['Extras'] = { 
         ['No Jump Cooldown'] = {
             ['Enabled'] = false,
         },
@@ -225,6 +233,10 @@ shared.Amiri = {
         },
 
         ['Korblox'] = {
+            ['Enabled'] = false,
+        },
+
+        ['No Recoil'] = {
             ['Enabled'] = false,
         },
     },
