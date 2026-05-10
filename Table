@@ -1,14 +1,14 @@
 shared.Amiri = {
     ['Global'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Keybind'] = 'C',
     },
 
     ['Camera Aimbot'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Hitparts'] = 'UpperTorso',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
-        ['Smoothing'] = 0.0723,
+        ['Smoothing'] = 0,
         ['Type'] = 'Linear',
 
         ['Prediction'] = {
@@ -18,32 +18,32 @@ shared.Amiri = {
         },
 
         ['Camera Modes'] = {
-            ['First Person'] = true,
+            ['First Person'] = false,
             ['Third Person'] = false,
-            ['Shift-Locked'] = true,
+            ['Shift-Locked'] = false,
         },
 
         ['FOV'] = {
             ['Enabled'] = false,
             ['Size'] = {
-                ['X'] = 5,
-                ['Y'] = 6,
-                ['Z'] = 7,
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
             },
         },
     },
 
     ['Silent Aimbot'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Hitparts'] = 'Closest Part',
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
 
         ['FOV'] = {
             ['Enabled'] = false,
             ['Size'] = {
-                ['X'] = 12,
-                ['Y'] = 12,
-                ['Z'] = 12,
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
             },
         },
 
@@ -60,7 +60,7 @@ shared.Amiri = {
     },
 
     ['Trigger Bot'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Checks'] = {'Knocked', 'Self-Knocked', 'Visible', 'Crew', 'Forcefield'},
         ['Delay Interval'] = 0.05,
 
@@ -73,9 +73,9 @@ shared.Amiri = {
         ['FOV'] = {
             ['Enabled'] = false,
             ['Size'] = {
-                ['X'] = 1.9,
-                ['Y'] = 3.5,
-                ['Z'] = 2,
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
             },
         },
 
@@ -98,22 +98,22 @@ shared.Amiri = {
         },
 
         ['Phantom Mag'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
         },
 
         ['Wallbang'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
         },
 
         ['Range Modification'] = {
-            ['Enabled'] = true,
-            ['Value'] = 10000,
+            ['Enabled'] = false,
+            ['Value'] = 0,
             ['Bypass Distance'] = 10,
         },
 
         ['Railgun'] = {
-            ['Enabled'] = true,
-            ['Delay Interval'] = 0.02,
+            ['Enabled'] = false,
+            ['Delay Interval'] = 0,
         },
 
         ['Bullet TP'] = {
@@ -141,7 +141,7 @@ shared.Amiri = {
         },
 
         ['Delay'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Weapons'] = {
                 ['[Double-Barrel SG]'] = 80,
                 ['[Revolver]'] = 40,
@@ -169,7 +169,7 @@ shared.Amiri = {
     },
 
     ['Inventory Sorter'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Keybind'] = 'K',
         ['Weapons'] = {
             [1] = '[Knife]',
@@ -180,23 +180,23 @@ shared.Amiri = {
     },
 
     ['Purchase'] = {
-        ['Enabled'] = true,
-        ['Autobuy'] = true,
+        ['Enabled'] = false,
+        ['Autobuy'] = false,
         ['Keybind'] = 'V',
         ['ArmorType'] = 'Full Armor',
         ['RageArmor'] = false,
     },
 
     ['Visuals'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Header'] = 'Amiri.wtf',
         ['Keybind'] = 'G',
         ['TeamCheck'] = false,
-        ['LockedIndicator'] = true,
+        ['LockedIndicator'] = false,
         ['Distance'] = false,
-        ['Name'] = true,
+        ['Name'] = false,
         ['Radar'] = false,
-        ['KeybindList'] = true,
+        ['KeybindList'] = false,
 
         ['Colors'] = {
             ['Default'] = Color3.fromRGB(255, 255, 255),
@@ -210,21 +210,21 @@ shared.Amiri = {
 
     ['World Modifications'] = {
         ['Color Settings'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Intensity'] = 3,
         },
     },
 
     ['Character Modifications'] = {
         ['Movement Modification'] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Keybind'] = 'T',
-            ['Multiplier'] = 20,
+            ['Multiplier'] = 0,
 
             ['Conditions'] = {
-                ['[Normal]'] = '20',
-                ['[Reloading]'] = '22',
-                ['[Low-Health]'] = '22',
+                ['[Normal]'] = '0',
+                ['[Reloading]'] = '0',
+                ['[Low-Health]'] = '0',
             },
         },
     },
